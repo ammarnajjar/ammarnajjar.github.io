@@ -13,26 +13,19 @@
 			</div>
 
 			<div class="footer-col footer-col-2">
-				<!-- <ul class="social-media-list">
 					{% if site.github_username %}
-					<li>
 						{% include icon-github.html username=site.github_username %}
-					</li>
 					{% endif %}
-
 					{% if site.twitter_username %}
-					<li>
 						{% include icon-twitter.html username=site.twitter_username %}
-					</li>
 					{% endif %}
-				</ul> -->
-				<p>
-				<a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src=images/rss.jpg width=18 hspace="3"/></a>
-				<a href="https://github.com/ammarnajjar"><img src=images/github.png width=18  hspace="3"/></a>
-				<a href="https://twitter.com/ammarnajjar"><img src=images/twitter.png width=18 /></a>
-				<a href="https://de.linkedin.com/in/najjarammar"><img src=images/linkedin.png width=18 hspace="3"/></a>
-				<a href="https://www.xing.com/profile/Ammar_Najjar"><img src=images/xing.jpg width=18 hspace="3"/></a>
-				</p>
+					{% if site.linkedin_username %}
+						{% include icon-linkedin.html username=site.linkedin_username %}
+					{% endif %}
+					{% if site.xing_username %}
+						{% include icon-xing.html username=site.xing_username %}
+					{% endif %}
+					{% include icon-rss.html %}
 			</div>
 
 			<!--<div class="footer-col footer-col-3">
