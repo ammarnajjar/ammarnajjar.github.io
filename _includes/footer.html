@@ -13,7 +13,7 @@
 			</div>
 
 			<div class="footer-col footer-col-2">
-				<ul class="social-media-list">
+				<!-- <ul class="social-media-list">
 					{% if site.github_username %}
 					<li>
 						{% include icon-github.html username=site.github_username %}
@@ -25,7 +25,14 @@
 						{% include icon-twitter.html username=site.twitter_username %}
 					</li>
 					{% endif %}
-				</ul>
+				</ul> -->
+				<p>
+				<a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src=images/rss.jpg width=18 hspace="3"/></a>
+				<a href="https://github.com/ammarnajjar"><img src=images/github.png width=18  hspace="3"/></a>
+				<a href="https://twitter.com/ammarnajjar"><img src=images/twitter.png width=18 /></a>
+				<a href="https://de.linkedin.com/in/najjarammar"><img src=images/linkedin.png width=18 hspace="3"/></a>
+				<a href="https://www.xing.com/profile/Ammar_Najjar"><img src=images/xing.jpg width=18 hspace="3"/></a>
+				</p>
 			</div>
 
 			<!--<div class="footer-col footer-col-3">
