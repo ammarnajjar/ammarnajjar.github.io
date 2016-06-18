@@ -2,7 +2,7 @@
 layout: post
 title:  "Opencv on Openshift"
 date:   2016-06-17 18:02:02 +0200
-categories: testing
+categories: development, opencv, python, openshift
 ---
 When I wanted to intall opencv on my python-2.7 openshift online cartridge I faced the problem of quota limitation to 1GB.  
 I found this [blog post](https://codingexodus.blogspot.de/2013/04/how-to-install-opencv-on-openshift.html) by Stephen Nneji discussed how to use DIY cartridge and install python and opencv manually. Another [blog post](http://kumarcode.com/How-to-install-OpenCV-on-OpenShift/) by Nikhil Kumar used the Python-2.7 cartridge template to reduce the size of compiled opencv.  
