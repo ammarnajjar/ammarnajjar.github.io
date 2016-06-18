@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Blog Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo;
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+			</li>
+      <!-- <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+				<h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li> -->
+    {% endfor %}
+  </ul>
+
+  <!-- <h1>Highlighted Media</h1>
+  <ul class="post&#45;list">
+    <li><span>02 Sep 2013</span> &raquo; <a href="link">text</a></li>
+  </ul> -->
+	<p class="rss-subscribe">subscribe RSS <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><img src=images/rss.jpg width=17 /></a></p>
+
+</div>
