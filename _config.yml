@@ -16,3 +16,4 @@ xing_username:  Ammar_Najjar
 # Build settings
 markdown: kramdown
 highlighter: rouge
+permalink:  pretty
