@@ -4,8 +4,16 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Blog Posts</h1>
+  <h1 class="page-heading">Posts by Category</h1>
+	<div class="tag-list">
+		<ul class="tag-list">
+		{% for tag in site.tags %}
+		<li><div class="categories-title"><a href="/tags/{{ tag | first }}">{{ tag | first }}</a></div></li>
+		{% endfor %}
+		</ul>
+	</div>
 
+  <h1 class="page-heading">All Posts</h1>
   <ul class="post-list">
     {% for post in site.posts %}
       <li><span>{{ post.date | date_to_string }}</span> &raquo;
@@ -25,5 +33,7 @@ layout: default
   <ul class="post&#45;list">
     <li><span>02 Sep 2013</span> &raquo; <a href="link">text</a></li>
   </ul> -->
+
+	<span id="forkongithub"><a href="https://github.com/ammarnajjar/ammarnajjar.github.io">Fork me on GitHub</a></span>
 
 </div>
