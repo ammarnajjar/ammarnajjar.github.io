@@ -3,7 +3,7 @@ layout: post
 title:  "Adventure through my vimrc"
 date:   2016-06-19 08:38:02 +0200
 categories: editors
-tags: editors
+tags: editors vim vimrc
 ---
 
 In this post I'm going to take you in an adventure in my [vimrc](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim) which I collected from using [vim](http://www.vim.org/) along the last few years. I will explain the feature or the function, then include the configurations or code that should be inserted in the vimrc file to activate that feature.  
