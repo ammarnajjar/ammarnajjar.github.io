@@ -9,7 +9,7 @@ tags: editors
 In this post I'm going to take you in an adventure in my [vimrc](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim) which I collected from using [vim](http://www.vim.org/) along the last few years. I will explain the feature or the function, then include the configurations or code that should be inserted in the vimrc file to activate that feature.  
 
 ## General Configurations (neovim)
-The very first section is for the general settings which I think that they should be set up in vim by default, as some of them already are default in [newovim](https://neovim.io/), which include:
+The very first section is for the general settings which I think that they should be set up in vim by default, as some of them already are default in [neovim](https://neovim.io/), which include:
 
 - Use incremental search: this feature enables vim from highlighting the search pattern while it is being typed. 
 {% highlight vim %}
