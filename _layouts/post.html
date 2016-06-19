@@ -12,6 +12,16 @@ layout: default
     {{ content }}
   </div>
 
+  <h1 class="page-heading">Tags</h1>
+	<div class="tag-list">
+		<ul>
+		{% for tag in page.tags %}
+		<li><div class="tag-title"><a href="/tags/{{ tag }}">{{ tag }}</a></div></li>
+		<!-- <li>{{ tag }}</li> -->
+		{% endfor %}
+		</ul>
+	</div>
+
 {% if post.comments != 0 %}
 	{% include disqus.html %}
 {% endif %}
