@@ -6,11 +6,11 @@ changefreq: weekly
 
 <div class="home">
 
-  <h1 class="page-heading">Posts by Category</h1>
+  <h1 class="page-heading">Tags</h1>
 	<div class="tag-list">
-		<ul class="tag-list">
+		<ul>
 		{% for tag in site.tags %}
-		<li><div class="categories-title"><a href="/tags/{{ tag | first }}">{{ tag | first }}</a></div></li>
+		<li><div class="tag-title"><a href="/tags/{{ tag | first }}">{{ tag | first }}</a></div></li>
 		{% endfor %}
 		</ul>
 	</div>
