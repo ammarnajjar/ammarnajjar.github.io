@@ -5,8 +5,19 @@ date:   2016-06-19 08:38:02 +0200
 categories: editors
 tags: editors vim vimrc
 ---
+<a name="Top" />
 
 In this post I'm going to take you in an adventure in my [vimrc](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim) which I collected from using [vim](http://www.vim.org/) along the last few years. I will explain the feature or the function, then include the configurations or code that should be inserted in the vimrc file to activate that feature.  
+
+## Contents:
+- [General Configurations (neovim)](#General Configurations (neovim))
+- [General Configurations (vim)](#General Configurations (vim))
+- [Plugins Manager](#Plugins)
+- [Mappings](#Mappings)
+- [Status Line](#Status Line)
+- [Useful Functions](#Useful Functions)
+
+<a name="General Configurations (neovim)" />
 
 ## General Configurations (neovim)
 The very first section is for the general settings which I think that they should be set up in vim by default, as some of them already are default in [neovim](https://neovim.io/), which include:
@@ -67,6 +78,10 @@ set smarttab
 {% highlight vim %}
 set autoindent
 {% endhighlight %}
+
+[Go to Top](#Top) 
+
+<a name="General Configurations (vim)" />
 
 ## General Configurations (vim)
 Another set of general configurations which are not included in [neovim](https://neovim.io/) by default. I still find them very useful.
@@ -223,7 +238,11 @@ set t_Co=256
 set t_ut=
 {% endhighlight %}
 
-## Plugins
+[Go to Top](#Top) 
+
+<a name="Plugins" />
+
+## Plugins Manager
 For plugins, I tried many plugins managers and found that [vundle](https://github.com/VundleVim/Vundle.vim) is my favourite, so I set it up in my vimrc:
 {% highlight vim %}
 filetype off
@@ -238,6 +257,10 @@ filetype plugin indent on
 syntax on
 {% endhighlight %}
 I am not going to discuss my favourite plugins and their configurations here, as it differs from time to time, and depends on the use of vim and the environment.
+
+[Go to Top](#Top) 
+
+<a name="Mappings" />
 
 ## Mappings
 - Many times I want to stay in visual mode when I do a shifting for a block of code, so I remapped the original keys to do the trick.
@@ -293,6 +316,10 @@ nmap <leader>ev :tabe $MYVIMRC<CR>
 map <leader>ss :setlocal spell!<cr>
 {% endhighlight %}
 
+[Go to Top](#Top) 
+
+<a name="Status Line" />
+
 ## Status Line 
 I have a very nice status line, which I am proud of, and prefer it over status line fancy plugins, of course it contains some plugins status, so if you don't use those famous plugins, just comment the lines for those, basically [Fugitive](https://github.com/tpope/vim-fugitive) and [Syntastic](https://github.com/scrooloose/syntastic).
 {% highlight vim %}
@@ -317,6 +344,10 @@ set statusline +=%c%V,%l/                                       " column and row
 set statusline +=%L\ %P                                         " total lines, position in file
 set laststatus=2
 {% endhighlight %}
+
+[Go to Top](#Top) 
+
+<a name="Useful Functions" />
 
 ## Useful Functions
 - Delete trailing white space on save, for all filetypes except markdown, for sometimes, I need to leave two spaces at the end of the line to make a soft line break.
@@ -531,3 +562,5 @@ autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
 
 All information for vim commands can be found using the help system in vim by typing `:help command` or look at the online [docs](http://vimdoc.sourceforge.net/htmldoc/options.html) for they are very plain and clear.  
 The complete set of my vimrc is on my [github](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim). There I use one [repo](https://github.com/ammarnajjar/dotfiles) for all my dotfiles, bash and tmux configutaions. Feel free to suggest improvements.
+
+[Go to Top](#Top) 
