@@ -185,7 +185,7 @@ source $HOME/moveit/devel/setup.bash
 ```
 At the time when I was using moveit, I faced some compilation [errors](https://gist.github.com/ammarnajjar/6e53d340fc4b6a0afab4de93d46c70d0), but I figured out the problem and made a [pull request](https://github.com/ros-planning/moveit_ros/pull/680) with a suggested solution, and it was merged in no time to ros-planning/moveit-ros [indigo-devel branch](https://github.com/ros-planning/moveit_ros/tree/indigo-devel), and the issue is solved.  
 
-After the installation is complete, I used [MoveIt Setup Assistant](http://docs.ros.org/hydro/api/moveit_setup_assistant/html/doc/tutorial.html) to generate the moveit configurations. I did it already myself and put it on [github](https://github.com/ammarnajjar/lwa4p_moveit_config), with all its tweeks.  
+After the installation is complete, I used [MoveIt Setup Assistant](http://docs.ros.org/hydro/api/moveit_setup_assistant/html/doc/tutorial.html) to generate the moveit configurations. I did it already myself and put it on [github](https://github.com/ammarnajjar/lwa4p_moveit_config), with all its tweaks.  
 If you don't want to do it yourself, go to your `src` directory in `catkin` workspace and clone it:
 
 ```bash
