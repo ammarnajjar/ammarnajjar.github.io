@@ -265,7 +265,7 @@ call plug#begin(s:editor_root."/plugged/")
 
 call plug#end()
 {% endhighlight %}
-I am not going to discuss my favourite plugins and their configurations here, as it differs from time to time, and depends on the use of vim and the working environment.
+I am not going to discuss my favorite plugins and their configurations here, as it differs from time to time, and depends on the use of vim and the working environment.
 
 [Go to Top](#Top)
 
