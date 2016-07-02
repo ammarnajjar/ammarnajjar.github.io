@@ -258,7 +258,7 @@ syntax on
 {% endhighlight %}
 Then I switched to another plugin manager called [vim-plug](https://github.com/vim-scripts/vim-plug) which is faster and do asynchronous updating for the plugins. The setup is also simpler, and works fine with both vim/neovim:
 {% highlight vim %}
-call plug#begin(s:editor\_root."/plugged/")
+call plug#begin(s:editor_root."/plugged/")
 
 " add plugins here
 " Plug 'dev-name/repo-name'
