@@ -7,7 +7,7 @@ tags: editors vim vimrc
 ---
 <a name="Top" />
 
-In this post I'm going to take you in an adventure in my [vimrc](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim) which I collected from using [vim](http://www.vim.org/) along the last few years. I will explain the feature or the function, then include the configurations or code that should be inserted in the vimrc file to activate that feature.  
+In this post I'm going to take you in an adventure in my [vimrc](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim) which I collected from using [vim](http://www.vim.org/) along the last few years. I will explain the feature or the function, then include the configurations or code that should be inserted in the vimrc file to activate that feature.
 
 ## Contents:
 - [General Configurations (neovim)](#General Configurations (neovim))
@@ -22,7 +22,7 @@ In this post I'm going to take you in an adventure in my [vimrc](https://github.
 ## General Configurations (neovim)
 The very first section is for the general settings which I think that they should be set up in vim by default, as some of them already are default in [neovim](https://neovim.io/), which include:
 
-- Use incremental search: this feature enables vim from highlighting the search pattern while it is being typed. 
+- Use incremental search: this feature enables vim from highlighting the search pattern while it is being typed.
 {% highlight vim %}
 set incsearch
 {% endhighlight %}
@@ -79,7 +79,7 @@ set smarttab
 set autoindent
 {% endhighlight %}
 
-[Go to Top](#Top) 
+[Go to Top](#Top)
 
 <a name="General Configurations (vim)" />
 
@@ -91,7 +91,7 @@ Another set of general configurations which are not included in [neovim](https:/
 set mouse=
 {% endhighlight %}
 
-- Show (partial) command in the last line of the screen. The [docs](http://vimdoc.sourceforge.net/htmldoc/options.html#%27showcmd%27) explain this very well so I copied that from there:  
+- Show (partial) command in the last line of the screen. The [docs](http://vimdoc.sourceforge.net/htmldoc/options.html#%27showcmd%27) explain this very well so I copied that from there:
 In Visual mode the size of the selected area is shown:
   - When selecting characters within a line, the number of characters. If the number of bytes is different it is also displayed: "2-6" means two characters and six bytes.
   - When selecting more than one line, the number of lines.
@@ -238,12 +238,12 @@ set t_Co=256
 set t_ut=
 {% endhighlight %}
 
-[Go to Top](#Top) 
+[Go to Top](#Top)
 
 <a name="Plugins" />
 
 ## Plugins Manager
-For plugins, I tried many plugins managers and found that [vundle](https://github.com/VundleVim/Vundle.vim) is my favourite, so I set it up in my vimrc:
+For plugins, I tried many plugins managers, I used to use [vundle](https://github.com/VundleVim/Vundle.vim), and the set it up in my vimrc should look like:
 {% highlight vim %}
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -256,9 +256,17 @@ call vundle#end()
 filetype plugin indent on
 syntax on
 {% endhighlight %}
-I am not going to discuss my favourite plugins and their configurations here, as it differs from time to time, and depends on the use of vim and the environment.
+Then I switched to another plugin manager called [vim-plug](https://github.com/vim-scripts/vim-plug) which is faster and do asynchronous updating for the plugins. The setup is also simpler, and works fine with both vim/neovim:
+{% highlight vim %}
+call plug#begin(s:editor\_root."/plugged/")
 
-[Go to Top](#Top) 
+" add plugins here
+" Plug 'dev-name/repo-name'
+
+call plug#end()
+{% endhighlight %}
+I am not going to discuss my favourite plugins and their configurations here, as it differs from time to time, and depends on the use of vim and the working environment.
+[Go to Top](#Top)
 
 <a name="Mappings" />
 
@@ -316,11 +324,11 @@ nmap <leader>ev :tabe $MYVIMRC<CR>
 map <leader>ss :setlocal spell!<cr>
 {% endhighlight %}
 
-[Go to Top](#Top) 
+[Go to Top](#Top)
 
 <a name="Status Line" />
 
-## Status Line 
+## Status Line
 I have a very nice status line, which I am proud of, and prefer it over status line fancy plugins, of course it contains some plugins status, so if you don't use those famous plugins, just comment the lines for those, basically [Fugitive](https://github.com/tpope/vim-fugitive) and [Syntastic](https://github.com/scrooloose/syntastic).
 {% highlight vim %}
 set statusline =
@@ -345,7 +353,7 @@ set statusline +=%L\ %P                                         " total lines, p
 set laststatus=2
 {% endhighlight %}
 
-[Go to Top](#Top) 
+[Go to Top](#Top)
 
 <a name="Useful Functions" />
 
@@ -364,7 +372,7 @@ endfunc
 autocmd BufWrite *.* :call DeleteTrailingWS()
 {% endhighlight %}
 
-- Convenient command to see the difference between the current buffer and the file it was loaded from, thus the changes you made. 
+- Convenient command to see the difference between the current buffer and the file it was loaded from, thus the changes you made.
 {% highlight vim %}
 if !exists(":Diff")
     command DiffOrig vert new | set bt=nofile | r ++edit # | 0d_ | diffthis
@@ -488,9 +496,9 @@ endfunction
 nnoremap <silent> <leader>cc :call g:ToggleColorColumn()<CR>
 {% endhighlight %}
 
-- Many times when I search for a regex, I wanted to copy all the existing matches and paste them somewhere else, that's why I use this function.  
-  - `:CopyMatches` to copy all matches to the clipboard.  
-  - `:CopyMatches x` where `x` is any register to hold the result.  
+- Many times when I search for a regex, I wanted to copy all the existing matches and paste them somewhere else, that's why I use this function.
+  - `:CopyMatches` to copy all matches to the clipboard.
+  - `:CopyMatches x` where `x` is any register to hold the result.
   - paste from register x with `"xp` or `"xP`.
 {% highlight vim %}
 function! CopyMatches(reg)
@@ -560,7 +568,8 @@ endfunction
 autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
 {% endhighlight %}
 
-All information for vim commands can be found using the help system in vim by typing `:help command` or look at the online [docs](http://vimdoc.sourceforge.net/htmldoc/options.html) for they are very plain and clear.  
-The complete set of my vimrc is on my [github](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim). There I use one [repo](https://github.com/ammarnajjar/dotfiles) for all my dotfiles, bash and tmux configutaions. Feel free to suggest improvements.
+All information for vim commands can be found using the help system in vim by typing `:help command` or look at the online [docs](http://vimdoc.sourceforge.net/htmldoc/options.html) for they are very plain and clear.
+The complete set of my vimrc is on my [github](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim). There I use one [repo](https://github.com/ammarnajjar/dotfiles) for all my dotfiles, bash and tmux configutaions.  
+Feel free to suggest improvements.
 
-[Go to Top](#Top) 
+[Go to Top](#Top)
