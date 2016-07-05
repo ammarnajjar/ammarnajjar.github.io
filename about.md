@@ -9,10 +9,10 @@ PhD researcher in "Human Robot Interaction"
 
 Institut für Automatisierungstechnik  
 Universität Bremen  
-E-Mail: [anajjar@iat.uni-bremen.de](mailto:anajjar@iat.uni-bremen.de)  
+E-Mail: anajjar(at)iat[dot]uni-bremen[dot]de  
 PGP [key](https://dl.dropboxusercontent.com/u/5348932/keys/najjar_iat.asc)  
 
 Friedrich-Wilhelm-Bessel-Institut  
 Forschungsgesellschaft m.b.H.  
-E-Mail: [najjar@fwbi-bremen.de](mailto:najjar@fwbi-bremen.de)  
+E-Mail: najjar(at)fwbi-bremen[dot]de  
 PGP [key](https://dl.dropboxusercontent.com/u/5348932/keys/najjar_fwbi.asc)  
