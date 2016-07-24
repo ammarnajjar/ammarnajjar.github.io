@@ -330,28 +330,39 @@ map <leader>ss :setlocal spell!<cr>
 <a name="Status Line" />
 
 ## Status Line
-I have a very nice status line, which I am proud of, and prefer it over status line fancy plugins, of course it contains some plugins status, so if you don't use those famous plugins, just comment the lines for those, basically [Fugitive](https://github.com/tpope/vim-fugitive) and [Syntastic](https://github.com/scrooloose/syntastic).
+I have a very nice status line, which I am proud of, and prefer it over status line fancy plugins. It contains some helper functions and plugins status, so if you don't use those plugins, just comment the lines for those, [Fugitive](https://github.com/tpope/vim-fugitive) and [Syntastic](https://github.com/scrooloose/syntastic).
 {% highlight vim %}
-set statusline =
-set statusline =[%n]\                                           " buffer number
-set statusline +=%<%.99f                                        " File name, F for full path
-set statusline +=%m%r%h%w                                       " status flags
+set statusline=
+set statusline=[%n]\                                            " buffer number
+set statusline+=%<%.99f                                         " File name, F for full path
+set statusline+=%#warningmsg#                                   " display a warning if
+set statusline+=%{HasPaste()}                                   " File name, F for full path
+set statusline+=%*                                              " tab chars
+set statusline+=%m%r%h%w                                        " status flags
 set statusline+=%#question#                                     " Display a warning if
 set statusline+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''} " file encoding isnt
 set statusline+=%*                                              " utf-8
 set statusline+=%#warningmsg#                                   " display a warning if
 set statusline+=%{StatuslineTabWarning()}                       " files contains
 set statusline+=%*                                              " tab chars
-set statusline +=%{fugitive#statusline()}                       " Fugitive
-set statusline +=%=                                             " right align remainder
-set statusline +=%{SyntasticStatuslineFlag()}                   " Syntastic
-set statusline +=%y                                             " buffer file type
+set statusline+=%#question#                                     " Display a warning if
+set statusline+=%{fugitive#statusline()}                        " Fugitive
+set statusline+=%*                                              " tab chars
+set statusline+=%=                                              " right align remainder
+set statusline+=%{SyntasticStatuslineFlag()}                    " Syntastic
+set statusline+=%y                                              " buffer file type
 set statusline+=%#directory#                                    " display a warning if
-set statusline+=%{&ff!='unix'?'['.&ff.']':''}                   " fileformat is not
+set statusline+=%{&ff!='unix'?'['.&ff.']':''}                   " fileformat isnt
 set statusline+=%*                                              " unix
-set statusline +=%c%V,%l/                                       " column and row Number
-set statusline +=%L\ %P                                         " total lines, position in file
+set statusline+=%c%V,%l/                                        " column and row Number
+set statusline+=%L\ %P                                          " total lines, position in file
 set laststatus=2
+{% endhighlight %}
+
+I like to change the color of the statusline to blue when I go insert mode, and this is done by the following lines:
+{% highlight vim %}
+autocmd InsertEnter * highlight StatusLine term=reverse ctermbg=Blue gui=bold guifg=White guibg=Blue
+autocmd InsertLeave * highlight StatusLine term=reverse ctermfg=254 ctermbg=238 gui=bold guifg=White guibg=Black
 {% endhighlight %}
 
 [Go to Top](#Top)
@@ -434,13 +445,30 @@ function! CompileAndRunJava()
 endfunction
 {% endhighlight %}
 
-- Returns true if paste mode is enabled.
+- In my status line, I use some functions. One is to get the state of the current buffer, weather it uses tabs or spaces.
+{% highlight vim %}
+function! StatuslineTabWarning()
+    if !exists("b:statusline_tab_warning")
+        let tabs = search('^\t', 'nw') != 0
+        if tabs
+            let b:statusline_tab_warning = '[tabs]'
+        else
+            let b:statusline_tab_warning = ''
+        endif
+    endif
+    return b:statusline_tab_warning
+endfunction
+autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
+{% endhighlight %}
+
+- This is to checks if paste mode is enabled, I like to see that in my statusline as well.
 {% highlight vim %}
 function! HasPaste()
     if &paste
-        return 'PASTE MODE  '
-    en
-    return ''
+        return '[PASTE]'
+    else
+        return ''
+    endif
 endfunction
 {% endhighlight %}
 
@@ -469,11 +497,6 @@ endfunction
 
 - As everyone has his own standards for using either tabs or spaces, this function allow toggling between tabs and spaces, so ease the hussle.
 {% highlight vim %}
-function! Retab()
-    :retab
-    :%s/\s\+$//
-endfunction
-
 function! TabToggle()
     if &expandtab
         set noexpandtab
@@ -551,22 +574,6 @@ function! AutoHighlightToggle()
     return 1
   endif
 endfunction
-{% endhighlight %}
-
-- In my status line, I use this function to get the state of the current buffer, weather it uses tabs or spaces.
-{% highlight vim %}
-function! StatuslineTabWarning()
-    if !exists("b:statusline_tab_warning")
-        let tabs = search('^\t', 'nw') != 0
-        if tabs
-            let b:statusline_tab_warning = '[tabs]'
-        else
-            let b:statusline_tab_warning = ''
-        endif
-    endif
-    return b:statusline_tab_warning
-endfunction
-autocmd cursorhold,bufwritepost * unlet! b:statusline_tab_warning
 {% endhighlight %}
 
 All information for vim commands can be found using the help system in vim by typing `:help command` or look at the online [docs](http://vimdoc.sourceforge.net/htmldoc/options.html) for they are very plain and clear.
