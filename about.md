@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 This is the blog of Ammar Najjar  
+E-Mail: najjarammar(at)gmail[dot]com  
+PGP [key](https://dl.dropboxusercontent.com/u/5348932/keys/Najjar.asc)  
+
 M.Sc. Information and Automation Engineering  
 PhD researcher in "Human Robot Interaction"  
 
