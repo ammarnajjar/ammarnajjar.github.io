@@ -17,3 +17,4 @@ xing_username:  Ammar_Najjar
 markdown: kramdown
 highlighter: rouge
 permalink:  pretty
+gems: [jekyll-gist]
