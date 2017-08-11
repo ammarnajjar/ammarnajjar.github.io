@@ -1,0 +1,29 @@
+language: python
+python:
+  - "3.6.2"
+dist: trusty
+
+env:
+  global:
+   - secure: "ogSTa3sPd83JbvWvFJkzDA0Ulvst3GLR/G+YQ/i0DHsuEhD7zc7QPFZDOsJJ/pgKk3TnKlF7we6oZyjkIUdEn3gUADUHFVLm+XUt1NCZE8ZxQV1JVV0x5LwtEJetY8sJ0puBKtC4eJR8RYCFMa7v2VU3JfG896jyqRjD1S6hx5ATSY8Ttb2mkddtYIaPmnvz/kREdjLZfmiLz0XAF9S9VRWt3UGB2LRg54tMDtsUm1rwYbIsU9sDbDda0APv/OOsOo9gSp/nTJOHrwwpmSQw8M0GP8pU83o1zWYG2vbDXaN3KOCw9IfvNATPV2cwjnsRj1aJV+D2ELh7n6ern+qBFp8xxBXYJIiorMC2B026S5l+z3eK56hW7AxwWVliYFTlQ/sAV6qOHjzeUdgBr25nsZ3QxTyd84GfmW9iK1WIoE7k0F5reFSbfoEgrH5tudzykIXYE7TWdhFV8WtOuaCZKDmf1nTTHYIG+EK7OYVtIfB8umwytISTDbcvv9mL5qf8vl/xazXFbTq5ELuO3hTKn2npWB8qPqTk6M/8cwwxIpNNgjLayr2peNgMz2+e3t0++6QGEFxFm9zf+6klnX/b35yKNiqB42eup3iPreBQtKH1ufAONnMJ3nGgIHPc5zyckiBiNgPb9jzMm9rAGPS1ktCwFMgo09l2E+VVXRw2N/c="
+
+before_install:
+  - wget https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip
+  - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python3.6.2/
+  - export CHROME_BIN=chromium-browser
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+  - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
+
+addons:
+  chrome: stable
+  coverity_scan:
+    project:
+      name: "ammarnajjar/ammarnajjar.github.io"
+      description: "Build submitted via Travis CI"
+    notification_email: najjarammar@gmail.com
+    build_command_prepend: "cov-configure --comptype python --compiler python"
+    build_command: "--no-command --fs-capture-search ./"
+    branch_pattern: master
+
+script: nosetests -v
