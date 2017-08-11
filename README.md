@@ -10,8 +10,8 @@
        src="https://scan.coverity.com/projects/13460/badge.svg"/>
 </a>
 
-
-It is automatically transformed by [Jekyll](https://jekyllrb.com/) into a static site whenever I push this repository to GitHub.
+It is automatically transformed by [Jekyll](https://jekyllrb.com/) into a static site whenever I push this repository to GitHub.  
+It will be published on: https://ammarnajjar.github.io
 
 ## License
 The following directories and their contents are Copyright Ammar Najjar. You may not reuse anything therein without my permission:
