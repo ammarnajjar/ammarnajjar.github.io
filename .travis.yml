@@ -26,4 +26,4 @@ addons:
     build_command: "--no-command --fs-capture-search ./"
     branch_pattern: master
 
-script: nosetests -v
+script: nosetests -v --nologcapture && cat logs/log.log
