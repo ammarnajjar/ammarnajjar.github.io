@@ -29,10 +29,10 @@ class TestCase(unittest.TestCase):
         options.add_argument("--no-first-run")
         options.add_argument("--disable-default-apps")
         cls.url = 'https://ammarnajjar.github.io/'
-        # cls.driver = webdriver.Chrome(
-        #     '/home/travis/virtualenv/python3.6.2/chromedriver',
-        #     chrome_options=options)
-        cls.driver = webdriver.Chrome()
+        cls.driver = webdriver.Chrome(
+            '/home/travis/virtualenv/python3.6.2/chromedriver',
+            chrome_options=options)
+        # cls.driver = webdriver.Chrome()
         cls.driver.get(cls.url)
 
     @classmethod
