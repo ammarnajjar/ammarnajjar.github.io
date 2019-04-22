@@ -3,7 +3,7 @@ layout: post
 title: "Fetch using Gitlab API"
 date: Tue Feb 26 19:52:43 CET 2019
 categories: development
-tags: development python git gitlab repository
+tags: python git gitlab
 ---
 # Fetch using Gitlab API
 

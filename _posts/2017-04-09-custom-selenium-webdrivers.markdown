@@ -3,7 +3,7 @@ layout: post
 title:  "Custom Selenium Webdrivers using Decorators"
 date:  2017-04-09 07:33:18 +0200
 categories: development
-tags: development python selenium webdriver decorator metaprogram
+tags: python selenium
 ---
 <a name="Top" />
 

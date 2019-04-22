@@ -3,7 +3,7 @@ layout: post
 title:  "Opencv on Openshift"
 date:   2016-06-17 18:02:02 +0200
 categories: development
-tags: development python opencv openshift
+tags: python opencv openshift
 ---
 <a name="Top" />
 

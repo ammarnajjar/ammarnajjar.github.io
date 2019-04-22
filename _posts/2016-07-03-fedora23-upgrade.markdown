@@ -2,7 +2,7 @@
 layout: post
 title: "Fedora23 Upgrade - unlabeled home"
 date: 2016-07-03 17:07:02 +0200
-tags: fedora upgrade
+tags: fedora
 ---
 <a name="Top" />
 

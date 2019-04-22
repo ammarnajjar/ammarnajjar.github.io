@@ -3,7 +3,7 @@ layout: post
 title: "RxJS Series: Observables"
 date: Mon Feb 18 15:34:35 CET 2019
 categories: development
-tags: development rxjs reactive typescript javascript
+tags: rxjs reactive
 ---
 # RxJs Series
 

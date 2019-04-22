@@ -3,7 +3,7 @@ layout: post
 title:  "Build Vim from Source"
 date:   2016-06-23 18:22:02 +0200
 categories: editors
-tags: editors vim build
+tags: vim
 ---
 <a name="Top" />
 Many times when I want to use vim which comes within the main repo of any Linux distro, I find that it is missing some kind of support, either python or client-server mode, or any other feature. And there for I have to build it manually from source and install it.  
