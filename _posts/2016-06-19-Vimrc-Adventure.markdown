@@ -1,13 +1,15 @@
 ---
 layout: post
-title:  "Adventure through my vimrc"
+title:  "Adventure through my vimrc (nvimrc)"
 date:   2016-06-19 08:38:02 +0200
 categories: editors
-tags: editors vim vimrc
+tags: neovim vim
 ---
 <a name="Top" />
 
-In this post I'm going to take you in an adventure in my [vimrc](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim) which I collected from using [vim](http://www.vim.org/) along the last few years. I will explain the feature or the function, then include the configurations or code that should be inserted in the vimrc file to activate that feature.
+In this post I'm going to take you in an adventure in my previously `vimrc` and currently [init.vim](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim) which I collected from using [vim](http://www.vim.org/) then [neovim](https://neovim.io) along the last few years. I will explain the feature or the function, then include the configurations or code that should be inserted in the `vimrc` (`init.vim`) file to activate that feature.
+
+This might not always be up to date, for I keep changing these configurations when I feel like it.
 
 ## Contents:
 - [General Configurations (neovim)](#General Configurations (neovim))
@@ -79,6 +81,11 @@ set smarttab
 set autoindent
 {% endhighlight %}
 
+- Live substitution (neovim only), when replacing a pattern.
+{% highlight vim %}
+set inccommand=nosplit
+{% endhighlight %}
+
 [Go to Top](#Top)
 
 <a name="General Configurations (vim)" />
@@ -86,9 +93,9 @@ set autoindent
 ## General Configurations (vim)
 Another set of general configurations which are not included in [neovim](https://neovim.io/) by default. I still find them very useful.
 
-- I don't like to use the mouse while I'm editing, so I like to disable it.
+- I don't like to use the mouse while I'm editing, still I like to enable it.
 {% highlight vim %}
-set mouse=
+set mouse=a
 {% endhighlight %}
 
 - Show (partial) command in the last line of the screen. The [docs](http://vimdoc.sourceforge.net/htmldoc/options.html#%27showcmd%27) explain this very well so I copied that from there:
@@ -99,7 +106,6 @@ In Visual mode the size of the selected area is shown:
 {% highlight vim %}
 set showcmd
 {% endhighlight %}
-
 
 - Show the matching of a bracket when inserted, this looks like as if the cursor moved to the matching one for a small period of time to highlight it. `matchtime` is to control that time period.
 {% highlight vim %}
@@ -116,7 +122,6 @@ set ignorecase
 {% highlight vim %}
 set smartcase
 {% endhighlight %}
-
 
 - Automatically save before executing commands like `:next` and `:make`. I do use [make](https://www.gnu.org/software/make/manual/make.html) a lot, so this is very efficient.
 {% highlight vim %}
@@ -138,7 +143,6 @@ set modelines=3
 {% highlight vim %}
 set scrolloff=3
 {% endhighlight %}
-
 
 - Show the mode that I am using as a message on the last line, weather it is `insert`, `visual` or `replace` mode.
 {% highlight vim %}
@@ -238,12 +242,19 @@ set t_Co=256
 set t_ut=
 {% endhighlight %}
 
+- Set vertical Cursor in insert mode.
+{% highlight vim %}
+set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
+  \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
+  \,sm:block-blinkwait175-blinkoff150-blinkon175
+{% endhighlight %}
+
 [Go to Top](#Top)
 
 <a name="Plugins" />
 
 ## Plugins Manager
-For plugins, I tried many plugins managers, I used to use [vundle](https://github.com/VundleVim/Vundle.vim), and the set it up in my vimrc should look like:
+For plugins, I tried many plugins managers, I used to use [vundle](https://github.com/VundleVim/Vundle.vim), and the set it up in my vimrc should have been looking like:
 {% highlight vim %}
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -265,13 +276,25 @@ call plug#begin(s:editor_root."/plugged/")
 
 call plug#end()
 {% endhighlight %}
-I am not going to discuss my favorite plugins and their configurations here, as it differs from time to time, and depends on the use of vim and the working environment.
+I am not going to discuss my favorite plugins and their configurations here, as it differs from time to time, and depends on the use of vim and the working environment. I also moved all the plugins related stuff into another file `plugs.vim`, so I don't get so distracted with them and their settings.
 
 [Go to Top](#Top)
 
 <a name="Mappings" />
 
 ## Mappings
+
+- Neovim terminal mode mappings, to act on terminal buffer similar to a normal vim buffer.
+{% highlight vim %}
+tnoremap <Esc> <C-\><C-n>
+tnoremap <C-h> <C-\><C-n><C-w>h
+tnoremap <C-j> <C-\><C-n><C-w>j
+tnoremap <C-k> <C-\><C-n><C-w>k
+tnoremap <C-l> <C-\><C-n><C-w>l
+noremap <leader>s :split term://bash<CR><C-w><S-j><S-a>
+noremap <leader>t :tabedit term://bash<CR><S-a>
+{% endhighlight %}
+
 - Many times I want to stay in visual mode when I do a shifting for a block of code, so I remapped the original keys to do the trick.
 {% highlight vim %}
 vnoremap < <gv
