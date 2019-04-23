@@ -1,7 +1,7 @@
+#!/bin/env python
 '''
 Auto generate tags modules
 '''
-#!/bin/env python
 
 import os
 import glob
@@ -47,6 +47,7 @@ tag: {}
     with open(os.path.join(file_path, 'index.html'), 'w+') as append_file:
         print('writing to %s' % append_file.name)
         append_file.write(content)
+
 
 DIST_PATH = '_posts'
 FILES_LISTING = get_dir_files(DIST_PATH)
