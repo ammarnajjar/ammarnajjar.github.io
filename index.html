@@ -5,37 +5,28 @@ changefreq: weekly
 ---
 
 <div class="home">
-
   <h1 class="page-heading">Tags</h1>
-	<div class="tag-list">
-		<ul>
-		{% for tag in site.tags %}
-		<li><div class="tag-title"><a href="/tags/{{ tag | first }}">{{ tag | first }}</a></div></li>
-		{% endfor %}
-		</ul>
-	</div>
+  <div class="tag-list">
+    <ul>
+      {% for tag in site.tags %}
+      <li>
+        <div class="tag-title">
+          <a href="/tags/{{ tag | first }}">{{ tag | first }}</a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 
   <h1 class="page-heading">All Posts</h1>
   <ul class="post-list">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo;
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</li>
-      <!-- <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-				<h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li> -->
+    <li>
+      <span>{{ post.date | date_to_string }}</span> &raquo;
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
     {% endfor %}
   </ul>
 
-  <!-- <h1>Highlighted Media</h1>
-  <ul class="post&#45;list">
-    <li><span>02 Sep 2013</span> &raquo; <a href="link">text</a></li>
-  </ul> -->
-
-	<span id="forkongithub"><a href="https://github.com/ammarnajjar/ammarnajjar.github.io">Fork me on GitHub</a></span>
-
+  <span id="forkongithub"><a href="https://github.com/ammarnajjar/ammarnajjar.github.io">Fork me on GitHub</a></span>
 </div>
