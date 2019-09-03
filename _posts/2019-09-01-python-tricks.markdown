@@ -27,9 +27,7 @@ This book gives some basic tips for python beginners, so like a flower from each
 
 I found myself just flipping through pages rather than reading the book, all seemed very basic and shallow. Don't get me wrong, it is well organizsed and formatted, but targeted for people who just started doing python, maybe followed the first tutorial, or had their first week playing with the language.
 
-I would never recommend it for anyone who had even one month doing python.
-
 ### Conclusion:
 
 - Level: Entry
-- Not Recommended
+- I would never recommend it for anyone who had even one month doing python.
