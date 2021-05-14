@@ -132,11 +132,7 @@
 .footer-col-2 {
   width: -webkit-calc(20% - (#{$spacing-unit} / 2));
   width: calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width: calc(45% - (#{$spacing-unit} / 2));
+  margin-left: auto;
 }
 
 @include media-query($on-laptop) {
@@ -348,7 +344,7 @@ img[alt="lwa4p-random"] {
 }
 
 .stackoverflow-flair {
-  width: 179px;
+  min-width: 179px;
   height: 50px;
 }
 //  vim: set ft=scss ts=4 sw=4 et ai :
