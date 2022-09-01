@@ -154,11 +154,3 @@ onResize(event) {
   this.innerWidth = window.innerWidth;
 }
 ```
-
-
-## Full Example:
-
-Let's explain it with an example:
-
-Let's say that we are building a blog. The very basic component for the blog is the blog post. For that you can create a `blog-post` component,
-which is inteded to be used so that all blog posts have the same look and feel. For simplicity sake, let's assume that all should have a title with blue background and a thin border all around, just like this
