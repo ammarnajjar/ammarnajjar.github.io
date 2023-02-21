@@ -22,8 +22,12 @@ layout: default
 		</ul>
 	</div>
 
-{% if post.comments != 0 %}
-	{% include disqus.html %}
-{% endif %}
+<script src="https://utteranc.es/client.js"
+        repo="ammarnajjar/github.io-comments"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
 
 </article>
