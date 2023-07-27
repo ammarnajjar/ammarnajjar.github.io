@@ -14,8 +14,7 @@ tags: book-review
 
 ## Summery:
 
-This book gives a difinition for being a pragmatic programmer, then talks about some of the basic principels to being one.
-It take a theoritical approch, with examples in the form of stories, to explain a specific problem, and how should one approuch it, and solve it.
+This book gives a definition for being a pragmatic programmer, then talks about some of the basic principles to being one. It take a theoretical approach, with examples in the form of stories, to explain a specific problem, and how should one approach it, and solve it.
 
 ### Highlights:
 
@@ -39,7 +38,7 @@ What I take with me from it:
 
 ## Opinion
 
-For someone, like me, who already has experience with more than one programming language, prioritize testing, and familiar with the agile development methods, this book looks some kind of repetition or an emphasize for the information one already know.
+For someone, like me, who already has experience with more than one programming language, prioritise testing, and familiar with the agile development methods, this book looks some kind of repetition or an emphasise for the information one already know.
 
 ## Conclusion:
 
