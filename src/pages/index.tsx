@@ -31,7 +31,7 @@ const experiences = [
   {
     title: 'Software Development Architect',
     company: 'CTS EVENTIM',
-    duration: 'Aug. 2024 - Present (11 months)', //
+    duration: 'Aug. 2024 - Present', //
     tasks: [
       'Architectural leadership of the development team.',
       'Making architectural decisions in coordination with relevant people/departments.',
@@ -129,13 +129,13 @@ const experiences = [
 // Define the education data
 const education = [
   {
-    degree: 'Information and Automation Engineering',
+    degree: 'M.Sc.: Information and Automation Engineering',
     institution: 'Bremen University',
     duration: 'Mar. 2011 - Aug. 2015 (4 years and 6 months)', //
     focus: 'Software Development, Machine vision, Robotics, Control Theory, Real time software design.',
   },
   {
-    degree: 'Automatic Control and Computers Engineering',
+    degree: 'Bachelor: Automatic Control and Computers Engineering',
     institution: 'Al-Baath University',
     duration: 'Sep. 2002 - July 2007 (4 years and 11 months)', //
     focus: 'Computer science, Automatic Control, Computer Architecture, Programming, Sensors and measurement.',
@@ -202,8 +202,8 @@ export default function Home() {
               <div className="col col--8 col--offset-2">
                 <p>
                   I am Ammar Najjar, a dedicated Software Development Architect
-                  currently based in Bremen, Germany, working at CTS EVENTIM{' '}
-                 . With a robust background spanning various facets of
+                  currently based in Bremen, Germany, working at CTS EVENTIM.
+                  With a robust background spanning various facets of
                   software development, my career journey includes significant
                   experience in architectural leadership, full-stack
                   development, quality assurance, and research. I am passionate
