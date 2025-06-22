@@ -165,14 +165,20 @@ function HomepageHeader() {
           Software Development Architect at CTS EVENTIM, Bremen, Germany
         </p>
         <div className={styles.buttons}>
+          <Link className="button button--secondary button--lg" to="#skills">
+            Skills
+          </Link>
           <Link
             className="button button--secondary button--lg"
             to="#experience"
           >
-            View Experience
+            Experience
           </Link>
-          <Link className="button button--secondary button--lg" to="#skills">
-            View Skills
+          <Link
+            className="button button--secondary button--lg"
+            to="/blog"
+          >
+            Blog
           </Link>
         </div>
       </div>
