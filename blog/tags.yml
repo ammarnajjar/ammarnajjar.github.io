@@ -1,0 +1,79 @@
+react:
+  label: ReactJs
+  permalink: /react
+  description: ReactJs related posts
+
+angular:
+  label: Angular
+  permalink: /angular
+  description: Angular related posts
+
+git:
+  label: Git
+  permalink: /git
+  description: git related posts
+
+Gitlab:
+  label: Gitlab
+  permalink: /gitlab
+  description: Gitlab related posts
+
+book-review:
+  label: book-review
+  permalink: /book-review
+  description: book review related posts
+
+selenium:
+  label: selenium
+  permalink: /selenium
+  description: selenium related posts
+
+fedora:
+  label: fedora
+  permalink: /fedora
+  description: fedora related posts
+
+neovim:
+  label: neovim
+  permalink: /neovim
+  description: neovim related posts
+
+vim:
+  label: vim
+  permalink: /vim
+  description: vim related posts
+
+openshift:
+  label: openshift
+  permalink: /openshift
+  description: openshift related posts
+
+opencv:
+  label: opencv
+  permalink: /opencv
+  description: opencv related posts
+
+python:
+  label: python
+  permalink: /python
+  description: python related posts
+
+lwa4p:
+  label: lwa4p
+  permalink: /lwa4p
+  description: lwa4p related posts
+
+robot:
+  label: robot
+  permalink: /robot
+  description: robot related posts
+
+moveit:
+  label: moveit
+  permalink: /moveit
+  description: moveit related posts
+
+ros:
+  label: ros
+  permalink: /ros
+  description: ros related posts

@@ -1,18 +1,41 @@
-# My personal blog website jekyll source.
+# Website
 
-[![Code Climate](https://codeclimate.com/github/ammarnajjar/ammarnajjar.github.io/badges/gpa.svg)](https://codeclimate.com/github/ammarnajjar/ammarnajjar.github.io)
-<a href="https://codeclimate.com/github/ammarnajjar/ammarnajjar.github.io"><img src="https://codeclimate.com/github/ammarnajjar/ammarnajjar.github.io/badges/issue_count.svg" /></a><!-- <a href="https://codeclimate.com/github/ammarnajjar/ammarnajjar.github.io/coverage"><img src="https://codeclimate.com/github/ammarnajjar/ammarnajjar.github.io/badges/coverage.svg" /></a> -->
-<a href="https://scan.coverity.com/projects/ammarnajjar-ammarnajjar-github-io">
-  <img alt="Coverity Scan Build Status"
-       src="https://scan.coverity.com/projects/13460/badge.svg"/>
-</a>
+This website is built using [Docusaurus](https://docusaurus.io/).
 
-It is automatically transformed by [Jekyll](https://jekyllrb.com/) into a static site whenever I push this repository to GitHub.  
-It will be published on: https://ammarnajjar.github.io
+## Installation
 
-## License
-The following directories and their contents are Copyright Ammar Najjar. You may not reuse anything therein without my permission:
-- \_posts/
-- images/
+```bash
+yarn
+```
 
-All other directories and files are MIT Licensed. Feel free to use the HTML and CSS as you please. 
+## Local Development
+
+```bash
+yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```bash
+yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+## Deployment
+
+Using SSH:
+
+```bash
+USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```bash
+GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
