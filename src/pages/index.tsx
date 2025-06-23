@@ -8,12 +8,19 @@ import React from 'react';
 // Define the skills data
 const skills = [
   'Software Architecture',
-  'Analytical Skills',
   'Software Development',
+  'Analytical Skills',
+  'Innovation & Creativity',
   'Problem solving skills',
+  'Leader Mindset',
+  'Communication',
+  'Researcher Mindset',
+  'Knowledge Transfer',
   'Continuous Integration',
-  'Agile',
+  'Agile & Scrum',
   'Microservices',
+  'Algorithms',
+  'AI Systems',
   'REST',
   'GrqphQL',
   'Test automation',
@@ -162,7 +169,7 @@ function HomepageHeader() {
         {/* Placeholder: You would need to add an actual profile picture in your static assets */}
         <h1 className="hero__title">{siteConfig.title}</h1> {/* "Ammar Najjar - Software Development Architect" */}
         <p className="hero__subtitle">
-          Software Development Architect at CTS EVENTIM, Bremen, Germany
+          Software Development Architect
         </p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="#skills">

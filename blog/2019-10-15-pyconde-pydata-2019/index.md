@@ -6,7 +6,7 @@ tags: [python]
 ---
 import pyConLogo from './PyConDEPyDataBER.jpg';
 
-[<img src={pyConLogo} alt="pyconde-logo" width="700" height="200" />](https://de.pycon.org/)
+[<img src={pyConLogo} alt="pyconde-logo" max-width="700" maxheight="200" width="100%" height="100%" />](https://de.pycon.org/)
 
 I have just came back from [PyConDe & PyData-2019](https://de.pycon.org/), and I would like to share/document my experience there. This is more like a diary than a blog, where I talk about:
 

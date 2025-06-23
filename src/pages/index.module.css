@@ -16,13 +16,38 @@
   }
 }
 
+
+@media screen and (min-width: 600px) {
+  .skillsList {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .skillsList {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .skillsList {
+    column-count: 1;
+  }
+}
+
 .buttons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  a {
+    margin-top: 0.5rem;
+  }
 }
 
 .profilePic {
   border-radius: 50%;
-  max-width: 18%;
+  width: 18%;
+  min-width: 150px;
 }
