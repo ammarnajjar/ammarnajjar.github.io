@@ -1,4 +1,4 @@
-# Website
+# Personal Website and Blog
 
 This website is built using [Docusaurus](https://docusaurus.io/).
 
