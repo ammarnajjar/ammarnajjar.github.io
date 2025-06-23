@@ -1,0 +1,17 @@
+/* src/theme/Footer/LinkItem/index.module.css */
+
+.footerImageLink {
+  height: 24px; /* Adjust size as needed */
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px; /* Space between image and any potential text label */
+  transition: transform 0.2s ease-in-out;
+}
+
+.footerImageLink:hover {
+  transform: scale(1.1);
+}
+
+ul {
+	column-count: 3;
+}
