@@ -9,12 +9,12 @@ export default function GiscusComponent() {
     <Giscus
       repo="ammarnajjar/github.io-comments"
       repoId="R_kgDOJA1LSA"
-      category="[ENTER CATEGORY NAME HERE]"
-      categoryId="[ENTER CATEGORY ID HERE]"
+      category="General"
+      categoryId="DIC_kwDOJA1LSM4Cr4Jr"
       mapping="pathname"
       strict="0"
       reactionsEnabled="1"
-      emitMetadata="1"
+      emitMetadata="0"
       inputPosition="top"
       theme={colorMode}
       lang="en"
