@@ -49,7 +49,6 @@ const config: Config = {
             type: ["rss", "atom"],
             xslt: true,
           },
-          // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/ammarnajjar/ammarnajjar.github.io/tree/main/",
@@ -66,7 +65,6 @@ const config: Config = {
   ],
 
   themeConfig: {
-    // Replace with your project's social card
     image: "https://github.com/ammarnajjar.png",
     navbar: {
       title: "Ammar Najjar",
@@ -75,12 +73,6 @@ const config: Config = {
         src: "https://github.com/ammarnajjar.png",
       },
       items: [
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'tutorialSidebar',
-        //   position: 'left',
-        //   label: 'Tutorial',
-        // },
         { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/ammarnajjar/ammarnajjar.github.io",
@@ -96,16 +88,16 @@ const config: Config = {
           title: "Community",
           items: [
             {
-              label: "GitHub", // Optional label for accessibility/tooltip
+              label: "GitHub",
               href: "https://github.com/ammarnajjar",
-              imageSrc: "/img/icon-github.svg", // Path to your image in static/img
-              alt: "GitHub Account", // Alt text for the image
+              imageSrc: "/img/icon-github.svg",
+              alt: "GitHub Account",
             },
             {
-              label: "StackOverflow", // Optional label for accessibility/tooltip
+              label: "StackOverflow",
               href: "https://stackoverflow.com/users/3297680/ammar",
-              imageSrc: "/img/icon-stackoverflow.png", // Path to your image in static/img
-              alt: "Stack Overflow Account", // Alt text for the image
+              imageSrc: "/img/icon-stackoverflow.png",
+              alt: "Stack Overflow Account",
             },
             {
               label: "Youtube",
@@ -144,10 +136,10 @@ const config: Config = {
               alt: "Connect on LinkedIn",
             },
             {
-              label: "RSS", // Optional label for accessibility/tooltip
+              label: "RSS",
               href: "https://ammarnajjar.github.io/blog/rss.xml",
-              imageSrc: "/img/icon-rss.svg", // Path to your image in static/img
-              alt: "My RSS Feed", // Alt text for the image
+              imageSrc: "/img/icon-rss.svg",
+              alt: "My RSS Feed",
             },
           ],
         },
