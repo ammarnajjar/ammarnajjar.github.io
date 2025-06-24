@@ -3,7 +3,7 @@ slug: lwa4p-robot
 title: Lwa4p Robot Arm Setup
 authors: ammarnajjar
 date: 2016-06-22 14:43:32 +0200
-tags: [lwa4p, robot, moveit, ros]
+tags: [robotics]
 ---
 
 During my experiments with the powerball lightweight [lwa4p robot arm](http://mobile.schunk-microsite.com/en/produkte/products/powerball-lightweight-arm-lwa-4p.html) from Schunk, I faced many difficulties in order to make it move using [moveit](http://moveit.ros.org/). In this post I share this experience.

@@ -1,3 +1,13 @@
+productivity:
+  label: Productivity
+  permalink: /productivity
+  description: Productivity related posts
+
+reactive:
+  label: Reactive
+  permalink: /reactive
+  description: Reactive related postives
+
 react:
   label: ReactJs
   permalink: /react
@@ -11,7 +21,7 @@ angular:
 git:
   label: Git
   permalink: /git
-  description: git related posts
+  description: Git related posts
 
 Gitlab:
   label: Gitlab
@@ -19,29 +29,29 @@ Gitlab:
   description: Gitlab related posts
 
 book-review:
-  label: book-review
+  label: Book Review
   permalink: /book-review
   description: book review related posts
 
 selenium:
-  label: selenium
+  label: Selenium
   permalink: /selenium
-  description: selenium related posts
+  description: Selenium related posts
 
 fedora:
-  label: fedora
+  label: Fedora
   permalink: /fedora
   description: fedora related posts
 
 neovim:
-  label: neovim
+  label: Neovim
   permalink: /neovim
-  description: neovim related posts
+  description: Neovim related posts
 
 vim:
-  label: vim
+  label: Vim
   permalink: /vim
-  description: vim related posts
+  description: Vim related posts
 
 openshift:
   label: openshift
@@ -49,31 +59,16 @@ openshift:
   description: openshift related posts
 
 opencv:
-  label: opencv
+  label: Opencv
   permalink: /opencv
-  description: opencv related posts
+  description: Opencv related posts
 
 python:
-  label: python
+  label: Python
   permalink: /python
-  description: python related posts
+  description: Python related posts
 
-lwa4p:
-  label: lwa4p
-  permalink: /lwa4p
-  description: lwa4p related posts
-
-robot:
-  label: robot
-  permalink: /robot
-  description: robot related posts
-
-moveit:
-  label: moveit
-  permalink: /moveit
-  description: moveit related posts
-
-ros:
-  label: ros
-  permalink: /ros
-  description: ros related posts
+robotics:
+  label: Robotics
+  permalink: /robotics
+  description: Robotics related posts

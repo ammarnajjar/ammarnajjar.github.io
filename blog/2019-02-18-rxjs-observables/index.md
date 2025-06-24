@@ -2,7 +2,7 @@
 slug: rxjs-observables
 title: RxJS Series - Observables
 authors: ammarnajjar
-tags: [rxjs, reactive]
+tags: [reactive]
 ---
 import Gist from 'react-gist';
 
