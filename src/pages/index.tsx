@@ -44,9 +44,22 @@ const skills = [
 // Define the experience data
 const experiences = [
   {
+    title: "Engineering Manager, Software Architect & Chapter Lead",
+    company: "CTS EVENTIM",
+    duration: "Jul. 2025 - Present", //
+    tasks: [
+      "Leading a full-stack squad with end-to-end responsibility for delivery, architecture, and people development.",
+      "Driving the technical vision and architectural direction across squads",
+      "Coaching and mentoring squad engineers and chapter members",
+      "Ensuring cross-functional alignment with Product, Design, and other Engineering Leads",
+      "Promoting technical and cultural best practices",
+      "Advocating for outcome-driven development and responsible decision-making",
+    ],
+  },
+  {
     title: "Software Development Architect",
     company: "CTS EVENTIM",
-    duration: "Aug. 2024 - Present", //
+    duration: "Aug. 2024 - Juli. 2025", //
     tasks: [
       "Architectural leadership of the development team.",
       "Making architectural decisions in coordination with relevant people/departments.",
