@@ -229,21 +229,14 @@ export default function Home() {
                         <div className="row">
                             <div className="col col--8 col--offset-2">
                                 <p>
-                                    I am Ammar Najjar, an Engineering Manager and a dedicated Software Development Architect
-                                    currently reside in Bremen, northern Germany, working at CTS EVENTIM.
-                                    With a robust background spanning various facets of software
-                                    development, my career journey includes significant experience
-                                    in leadership, architecture, full-stack development, quality
-                                    assurance, and research. I am passionate about creating a healthy,
-                                    high-performing team environment while also guiding the technical
-                                    direction and architectural decisions. My goal is to ensure that
-                                    my team grows as individuals and as a team, while building solutions
-                                    that are robust, scalable, and aligned with our product vision.
-                                    My expertise covers a wide range of technologies and methodologies,
-                                    from microservices and cloud-native deployments to agile software
-                                    development environments. I also enjoy making open-source contributions,
-                                    reading both technical and non-technical literature, playing chess,
-                                    and photography. I actively participate in conferences and local software user groups.
+                                    I'm an engineering manager and a software architect at CTS EVENTIM in Bremen,
+                                    Germany, where I lead a full-stack development team. With a Masters in Information
+                                    and Automation Engineering, I bring over a decade of experience in software
+                                    architecture, full-stack development, and quality assurance. I work with
+                                    technologies like Angular, NestJS, .NET Core, Docker, and Kubernetes to build
+                                    scalable, maintainable systems. As a mentor and chapter lead, I'm passionate about
+                                    fostering engineering excellence and helping teams grow. Outside of work, I enjoy
+                                    contributing to open-source, playing chess, photography, and continuous learning.
                                 </p>
                             </div>
                         </div>
