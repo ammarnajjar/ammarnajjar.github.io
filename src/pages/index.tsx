@@ -230,7 +230,7 @@ export default function Home() {
                             <div className="col col--8 col--offset-2">
                                 <p>
                                     I am Ammar Najjar, an Engineering Manager and a dedicated Software Development Architect
-                                    currently based in Bremen, Germany, working at CTS EVENTIM.
+                                    currently reside in Bremen, northern Germany, working at CTS EVENTIM.
                                     With a robust background spanning various facets of software
                                     development, my career journey includes significant experience
                                     in leadership, architecture, full-stack development, quality
@@ -241,7 +241,9 @@ export default function Home() {
                                     that are robust, scalable, and aligned with our product vision.
                                     My expertise covers a wide range of technologies and methodologies,
                                     from microservices and cloud-native deployments to agile software
-                                    development environments.
+                                    development environments. I also enjoy making open-source contributions,
+                                    reading both technical and non-technical literature, playing chess,
+                                    and photography. I actively participate in conferences and local software user groups.
                                 </p>
                             </div>
                         </div>
