@@ -194,7 +194,7 @@ function HomepageHeader() {
                 {/* Placeholder: You would need to add an actual profile picture in your static assets */}
                 <h1 className="hero__title">{siteConfig.title}</h1>{" "}
                 {/* "Ammar Najjar - Software Development Architect" */}
-                <p className="hero__subtitle">Software Development Architect</p>
+                <p className="hero__subtitle">Engineering Manager & Software Development Architect</p>
                 <div className={styles.buttons}>
                     <Link className="button button--secondary button--lg" to="#skills">
                         Skills
@@ -229,7 +229,7 @@ export default function Home() {
                         <div className="row">
                             <div className="col col--8 col--offset-2">
                                 <p>
-                                    I'm an engineering manager and a software architect at CTS EVENTIM in Bremen,
+                                    I'm an engineering manager and a software development architect at CTS EVENTIM in Bremen,
                                     Germany, where I lead a full-stack development team. With a Masters in Information
                                     and Automation Engineering, I bring over a decade of experience in software
                                     architecture, full-stack development, and quality assurance. I work with
