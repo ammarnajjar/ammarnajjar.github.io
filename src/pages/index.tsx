@@ -44,7 +44,7 @@ const skills = [
 // Define the experience data
 const experiences = [
     {
-        title: "Engineering Manager, Software Architect & Chapter Lead",
+        title: "Engineering Manager, Software Architect",
         company: "CTS EVENTIM",
         duration: "Jul. 2025 - Present", //
         tasks: [
@@ -59,7 +59,7 @@ const experiences = [
     {
         title: "Software Development Architect",
         company: "CTS EVENTIM",
-        duration: "Aug. 2024 - Juli. 2025 (11 months)", //
+        duration: "Aug. 2024 - Juli. 2025 (1 year)", //
         tasks: [
             "Architectural leadership of the development team.",
             "Making architectural decisions in coordination with relevant people/departments.",
