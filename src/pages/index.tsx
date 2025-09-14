@@ -41,25 +41,49 @@ const skills = [
     "Kubernetes",
 ]; //
 
+
+/**
+ * Calculates the number of years and months elapsed from a given start date (in "MM.YYYY" format) until today.
+ *
+ * @param startDate - The start date as a string in the format "MM.YYYY".
+ * @returns A string representing the elapsed time in years and months (e.g., "2 years and 3 months", "1 year", or "5 months").
+ */
+const monthsTillToday = (startDate) => {
+    const [startMonth, startYear] = startDate.split(".").map(Number);
+    const start = new Date(startYear, startMonth - 1); // Months are 0-indexed in JS Date
+    const today = new Date();
+
+    let months =
+        (today.getFullYear() - start.getFullYear()) * 12 +
+        (today.getMonth() - start.getMonth());
+
+    const years = Math.floor(months / 12);
+    months = months % 12;
+
+    if (years > 0) {
+        return months > 0 ? `${years} years and ${months} months` : `${years} years`;
+    } else {
+        return `${months} months`;
+    }
+}
+
 // Define the experience data
 const experiences = [
     {
-        title: "Engineering Manager, Software Architect & Chapter Lead",
+        title: "Engineering Manager",
         company: "CTS EVENTIM",
-        duration: "Jul. 2025 - Present", //
+        duration: `Jul. 2025 - Present (${monthsTillToday('06.2025')})`, //
         tasks: [
-            "Leading a full-stack squad with end-to-end responsibility for delivery, architecture, and people development.",
-            "Driving the technical vision and architectural direction across squads",
-            "Coaching and mentoring squad engineers and chapter members",
-            "Ensuring cross-functional alignment with Product, Design, and other Engineering Leads",
-            "Promoting technical and cultural best practices",
-            "Advocating for outcome-driven development and responsible decision-making",
+            "Leading a full-stack squad with end-to-end responsibility for delivery, and people development.",
+            "Coaching and mentoring squad engineers.",
+            "Ensuring cross-functional alignment with Product, Design, and other Engineering Leads.",
+            "Advocating for outcome-driven development and responsible decision-making.",
         ],
     },
     {
         title: "Software Development Architect",
         company: "CTS EVENTIM",
-        duration: "Aug. 2024 - Juli. 2025 (11 months)", //
+        duration: `Aug. 2024 - Present (${monthsTillToday('08.2024')})`, //
         tasks: [
             "Architectural leadership of the development team.",
             "Making architectural decisions in coordination with relevant people/departments.",
@@ -194,7 +218,7 @@ function HomepageHeader() {
                 {/* Placeholder: You would need to add an actual profile picture in your static assets */}
                 <h1 className="hero__title">{siteConfig.title}</h1>{" "}
                 {/* "Ammar Najjar - Software Development Architect" */}
-                <p className="hero__subtitle">Engineering Manager & Software Development Architect</p>
+                <p className="hero__subtitle">Engineering Leader & Software Architect</p>
                 <div className={styles.buttons}>
                     <Link className="button button--secondary button--lg" to="#skills">
                         Skills
