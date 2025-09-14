@@ -83,7 +83,7 @@ const experiences = [
     {
         title: "Software Development Architect",
         company: "CTS EVENTIM",
-        duration: `Aug. 2024 - Present (${monthsTillToday('08.2024')})`, //
+        duration: `Aug. 2024 - Present (${monthsTillToday('07.2024')})`, //
         tasks: [
             "Architectural leadership of the development team.",
             "Making architectural decisions in coordination with relevant people/departments.",
