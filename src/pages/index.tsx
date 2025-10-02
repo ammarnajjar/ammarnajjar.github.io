@@ -80,6 +80,7 @@ const experiences = [
         duration: `Oct. 2025 - Present (${monthsTillToday('10.2025')})`, //
         tasks: [
             "Leading the Angular chapter across squads.",
+            "People development of Angular engineers (mentoring, growth, performance input).",
             "Defining and evolving frontend architecture standards, coding guidelines, and shared libraries.",
             "Facilitating knowledge sharing sessions, workshops, and mentoring Angular engineers.",
             "Driving performance, accessibility, and developer experience improvements across Angular applications.",
@@ -91,7 +92,7 @@ const experiences = [
         company: "CTS EVENTIM",
         duration: `Jul. 2025 - Present (${monthsTillToday('06.2025')})`, //
         tasks: [
-            "Leading a full-stack squad with end-to-end responsibility for delivery, and people development.",
+            "Leading a full-stack squad with end-to-end responsibility for delivery.",
             "Coaching and mentoring squad engineers.",
             "Ensuring cross-functional alignment with Product, Design, and other Engineering Leads.",
             "Advocating for outcome-driven development and responsible decision-making.",
