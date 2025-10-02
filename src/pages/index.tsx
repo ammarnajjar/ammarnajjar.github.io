@@ -8,7 +8,7 @@ import ReactPlayer from "react-player";
 
 const anaylsis = (
     <ReactPlayer
-        url="/audio/Ammar-Najjar_Engineering-Manager-Portfolio.wav"
+        url="/audio/The_Three_Headed_Engineer_Architect_Chapter_Lead.mov"
         controls
     />
 );
