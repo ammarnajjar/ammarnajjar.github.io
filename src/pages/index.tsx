@@ -15,30 +15,35 @@ const anaylsis = (
 
 // Define the skills data
 const skills = [
+    "Leader Mindset",
+    "Innovation & Creativity",
     "Software Architecture",
     "Software Development",
     "Analytical Skills",
-    "Innovation & Creativity",
-    "Problem solving skills",
-    "Leader Mindset",
+    "Mentoring & Coaching",
+    "Cross-Functional Collaboration",
+    "Knowledge Transfer",
     "Communication",
+
     "Researcher Mindset",
     "Knowledge Transfer",
     "Continuous Integration",
     "Agile & Scrum",
     "Microservices",
     "Algorithms",
-    "AI Systems",
-    "REST",
-    "GrqphQL",
-    "Test automation",
-    "Quality Management",
-    "Kong",
-    "Docker",
+    "NestJS",
+    ".NET Core",
     "Python",
+
+    "AI Systems",
+    "Scalability & Resilience",
+    "Quality Management",
+    "Test automation",
     "Angular",
-    "Linux",
+    "Python",
+    "Docker",
     "Kubernetes",
+    "Linux",
 ]; //
 
 
@@ -70,7 +75,19 @@ const monthsTillToday = (startDate) => {
 // Define the experience data
 const experiences = [
     {
-        title: "Engineering Manager",
+        title: "Chapter Lead",
+        company: "CTS EVENTIM",
+        duration: `Oct. 2025 - Present (${monthsTillToday('10.2025')})`, //
+        tasks: [
+            "Leading the Angular chapter across squads.",
+            "Defining and evolving frontend architecture standards, coding guidelines, and shared libraries.",
+            "Facilitating knowledge sharing sessions, workshops, and mentoring Angular engineers.",
+            "Driving performance, accessibility, and developer experience improvements across Angular applications.",
+            "Collaborating with product and engineering leadership to align cross-squad frontend initiatives with business goals.",
+        ],
+    },
+    {
+        title: "Engineering Team Lead",
         company: "CTS EVENTIM",
         duration: `Jul. 2025 - Present (${monthsTillToday('06.2025')})`, //
         tasks: [
@@ -253,14 +270,13 @@ export default function Home() {
                         <div className="row">
                             <div className="col col--8 col--offset-2">
                                 <p>
-                                    I'm an engineering manager and a software development architect at CTS EVENTIM in Bremen,
-                                    Germany, where I lead a full-stack development team. With a Masters in Information
-                                    and Automation Engineering, I bring over a decade of experience in software
-                                    architecture, full-stack development, and quality assurance. I work with
-                                    technologies like Angular, NestJS, .NET Core, Docker, and Kubernetes to build
-                                    scalable, maintainable systems. As a mentor and chapter lead, I'm passionate about
-                                    fostering engineering excellence and helping teams grow. Outside of work, I enjoy
-                                    contributing to open-source, playing chess, photography, and continuous learning.
+                                    I'm an Engineering Team Lead, Angular Chapter Lead, and Software Development Architect at CTS EVENTIM in Bremen,
+                                    Germany. I lead a full-stack squad end-to-end while driving cross-squad frontend standards and mentoring engineers
+                                    through the Angular chapter. With a Masters in Information and Automation Engineering, I bring over a decade of
+                                    experience in software architecture, full-stack development, and quality assurance. I work with technologies like
+                                    Angular, NestJS, .NET Core, Docker, and Kubernetes to build scalable, maintainable systems. I'm passionate about
+                                    engineering excellence, developer experience, and team growth. Outside of work, I enjoy contributing to open source,
+                                    playing chess, photography, and continuous learning.
                                 </p>
                             </div>
                         </div>
