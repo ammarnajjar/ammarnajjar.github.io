@@ -34,4 +34,4 @@ I found myself just flipping through pages rather than reading the book, all see
 - Level: Entry
 - I would never recommend it for anyone who had even one month doing python.
 
-[Go to Top](#Top)
+[Go to Top](#)

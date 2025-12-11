@@ -34,4 +34,4 @@ drwx------.  2 root     root     system_u:object_r:lost_found_t:s0     16384 Sep
 drwx------.  5 root     root     system_u:object_r:user_home_dir_t:s0  4096 Jan 13 11:48 testuser
 ```
 
-[Go to Top](#Top)
+[Go to Top](#)

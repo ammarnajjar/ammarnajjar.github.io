@@ -88,7 +88,7 @@ set autoindent
 set inccommand=nosplit
 ```
 
-[Go to Top](#Top)
+[Go to Top](#)
 
 ## General Configurations (vim)
 Another set of general configurations which are not included in [neovim](https://neovim.io/) by default. I still find them very useful.
@@ -273,7 +273,7 @@ set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
   \,sm:block-blinkwait175-blinkoff150-blinkon175
 ```
 
-[Go to Top](#Top)
+[Go to Top](#)
 
 ## Plugins Manager
 For plugins, I tried many plugins managers, I used to use [vundle](https://github.com/VundleVim/Vundle.vim), and the set it up in my vimrc should have been looking like:
@@ -302,7 +302,7 @@ call plug#end()
 ```
 I am not going to discuss my favorite plugins and their configurations here, as it differs from time to time, and depends on the use of vim and the working environment. I also moved all the plugins related stuff into another file `plugs.vim`, so I don't get so distracted with them and their settings.
 
-[Go to Top](#Top)
+[Go to Top](#)
 
 ## Mappings
 
@@ -380,7 +380,7 @@ nmap <leader>ev :tabe $MYVIMRC<CR>
 map <leader>ss :setlocal spell!<cr>
 ```
 
-[Go to Top](#Top)
+[Go to Top](#)
 
 ## Status Line
 I have a very nice status line, which I am proud of, and prefer it over status line fancy plugins. It contains some helper functions and plugins status, so if you don't use those plugins, just comment the lines for those, [Fugitive](https://github.com/tpope/vim-fugitive) and [Syntastic](https://github.com/scrooloose/syntastic).
@@ -420,7 +420,7 @@ autocmd InsertEnter * highlight StatusLine term=reverse ctermbg=Blue gui=bold gu
 autocmd InsertLeave * highlight StatusLine term=reverse ctermfg=254 ctermbg=238 gui=bold guifg=White guibg=Black
 ```
 
-[Go to Top](#Top)
+[Go to Top](#)
 
 ## Useful Functions
 - Delete trailing white space on save, for all filetypes except markdown, for sometimes, I need to leave two spaces at the end of the line to make a soft line break.
@@ -649,4 +649,4 @@ The complete set of my vimrc is on my [github](https://github.com/ammarnajjar/do
 
 Feel free to suggest improvements.
 
-[Go to Top](#Top)
+[Go to Top](#)

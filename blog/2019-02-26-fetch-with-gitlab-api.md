@@ -72,4 +72,4 @@ Full project repository can be found [here](https://github.com/ammarnajjar/fetch
 python main.py
 ```
 
-[Go to Top](#Top)
+[Go to Top](#)

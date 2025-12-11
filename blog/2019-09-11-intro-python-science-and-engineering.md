@@ -33,4 +33,4 @@ I found it nice to read, and had a jupyter notebook open on the side, to try som
 - Level: Intermediate
 - I recommend it for students of information engineering, and who finished their degree.
 
-[Go to Top](#Top)
+[Go to Top](#)

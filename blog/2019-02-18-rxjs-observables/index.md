@@ -43,7 +43,7 @@ Observable is (from [Docs](http://reactivex.io/rxjs/class/es6/Observable.js~Obse
 
 So the subscriber is an observer, and all observers gets converted to subscribers to support the subscribe/unsubscribe functionality.
 
-[Go to Top](#Top)
+[Go to Top](#)
 
 #### From Scratch
 
@@ -112,7 +112,7 @@ By wrapping a sequence of values with `of` returns an observable with those valu
 
 <Gist id="74e1a9696b2b685052573c1aabcf31a9" file="rxjs-of.ts" />
 
-[Go to Top](#Top)
+[Go to Top](#)
 ([Try on StackBlitz](https://stackblitz.com/edit/rxjs-03))
 
 ##### - [`range`](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-range):
@@ -121,7 +121,7 @@ This reminds me with python's `range` function, it emits a sequence of numbers d
 
 <Gist id="74e1a9696b2b685052573c1aabcf31a9" file="rxjs-range.ts" />
 
-[Go to Top](#Top)
+[Go to Top](#)
 ([Try on StackBlitz](https://stackblitz.com/edit/rxjs-05))
 
 ##### - [`interval`](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-interval):
@@ -130,7 +130,7 @@ This takes a parameter as time in milliseconds and generates a sequence of numbe
 
 <Gist id="74e1a9696b2b685052573c1aabcf31a9" file="rxjs-interval.ts" />
 
-[Go to Top](#Top)
+[Go to Top](#)
 ([Try on StackBlitz](https://stackblitz.com/edit/rxjs-06))
 
 ##### - [`timer`](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-timer):
@@ -139,7 +139,7 @@ This takes two parameters `(initialDelay, period)`. The initial delay could be a
 
 <Gist id="74e1a9696b2b685052573c1aabcf31a9" file="rxjs-timer.ts" />
 
-[Go to Top](#Top)
+[Go to Top](#)
 ([Try on StackBlitz](https://stackblitz.com/edit/rxjs-07))
 
 ##### - [`from`](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-from):
@@ -149,7 +149,7 @@ This is a magical method, which converts so many data types into observables: Ar
 <Gist id="74e1a9696b2b685052573c1aabcf31a9" file="rxjs-from.ts" />
 
 
-[Go to Top](#Top)
+[Go to Top](#)
 ([Try on StackBlitz](https://stackblitz.com/edit/rxjs-04)) >> *`take` operator is used here to show the first 5 values of the infinite stream, it will be discussed later in detail*
 
 ##### - [`fromEvent`](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-fromEvent):
@@ -159,7 +159,7 @@ It takes two parameters `(element: EventTarget, eventName: string)`
 
 <Gist id="74e1a9696b2b685052573c1aabcf31a9" file="rxjs-fromEvent.ts" />
 
-[Go to Top](#Top)
+[Go to Top](#)
 ([Try on StackBlitz](https://stackblitz.com/edit/rxjs-08))
 
 ##### - [`create`](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#static-method-create):
@@ -170,7 +170,7 @@ In the following example a counter is set to count once every second, and this c
 
 <Gist id="74e1a9696b2b685052573c1aabcf31a9" file="rxjs-create.ts" />
 
-[Go to Top](#Top)
+[Go to Top](#)
 ([Try on StackBlitz](https://stackblitz.com/edit/rxjs-10))
 
 ## Conclusion
@@ -185,4 +185,4 @@ More References to Observables:
 - [ReactiveX Docs](http://reactivex.io/documentation/observable.html)
 - [ReactiveX API](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html)
 
-[Go to Top](#Top)
+[Go to Top](#)
