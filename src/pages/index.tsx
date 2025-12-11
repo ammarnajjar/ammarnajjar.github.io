@@ -4,13 +4,8 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import styles from "./index.module.css";
 import React from "react";
-import ReactPlayer from "react-player";
-
 const anaylsis = (
-    <ReactPlayer
-        url="/audio/The_Three_Headed_Engineer_Architect_Chapter_Lead.mov"
-        controls
-    />
+    <audio src="/audio/The_Three_Headed_Engineer_Architect_Chapter_Lead.mov" controls />
 );
 
 // Define the skills data
@@ -238,12 +233,12 @@ function HomepageHeader() {
                 {/* "Ammar Najjar - Software Development Architect" */}
                 <p className="hero__subtitle">Engineering Leader & Software Architect</p>
                 <div className={styles.buttons}>
-                    <Link className="button button--secondary button--lg" to="#skills">
+                    <Link className="button button--secondary button--lg" to="/#skills">
                         Skills
                     </Link>
                     <Link
                         className="button button--secondary button--lg"
-                        to="#experience"
+                        to="/#experience"
                     >
                         Experience
                     </Link>

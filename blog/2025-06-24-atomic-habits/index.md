@@ -129,4 +129,4 @@ I really liked this book, read it multiple times.
 - I would recommend it to everyone 👍
 
 
-[Go to Top](#Top)
+[Go to Top](#)
