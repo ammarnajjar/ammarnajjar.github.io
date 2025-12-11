@@ -23,4 +23,4 @@ I do not think that this is so complecated to be understood for any React beginn
 
 What do you think?
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

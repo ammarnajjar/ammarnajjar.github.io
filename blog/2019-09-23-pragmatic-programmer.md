@@ -46,4 +46,4 @@ For someone, like me, who already has experience with more than one programming 
 - I recommend it if you don't appreciate testing, or early refactoring, or want to know more about agile development methods, ways to better architect your projects. It is a good read after all.
 - Level: Beginner to Intermediate
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

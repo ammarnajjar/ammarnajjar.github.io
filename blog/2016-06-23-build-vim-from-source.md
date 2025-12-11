@@ -26,4 +26,4 @@ In case python-2.7 is needed instead of python3, just replace them in the config
 	--with-python-config-dir=/usr/lib/python2.7/config  \
 ```
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

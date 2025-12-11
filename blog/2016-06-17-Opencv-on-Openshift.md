@@ -28,4 +28,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

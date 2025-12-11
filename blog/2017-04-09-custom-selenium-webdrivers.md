@@ -154,4 +154,4 @@ return drivers
 It might be possible to do the same functionality using a meta class. I will look into that later.
 If you have any comments or suggestions please share it with me.
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

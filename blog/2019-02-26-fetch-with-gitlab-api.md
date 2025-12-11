@@ -72,4 +72,4 @@ Full project repository can be found [here](https://github.com/ammarnajjar/fetch
 python main.py
 ```
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

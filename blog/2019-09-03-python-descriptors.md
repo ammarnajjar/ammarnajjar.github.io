@@ -90,4 +90,4 @@ You don't need an editor open deside you while reading, so I pretty much read it
 - Level: Advanced
 - I recommend this book for python developer who like to know what is going under the hood, twinkle with the interiors functionality of python, and curious how every thing works.
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

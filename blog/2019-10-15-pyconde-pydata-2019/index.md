@@ -109,4 +109,4 @@ import blackLogo from './black_logo.png';
  <img src={bokehLogo} alt="bokeh-logo" width="100" height="120" />
  <img src={blackLogo} alt="bokeh-logo" width="200" height="100" />
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

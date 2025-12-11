@@ -72,7 +72,7 @@ That's it.
 
 If the requirements changes, and the footer is needed to have a link text instead of the button, all what needs to be done is to implement the new content component, then project it in place in the footer component instead of the button component.
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>
 
 ## Multi-slot content projection:
 
@@ -138,7 +138,7 @@ export class AppComponent {}
 
 This implementation gives a huge felxibility and decoupling of components. For example it is very easy to switch the content components places, or even replace any of the content components without the need to re-implement the whole structure.
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>
 
 ## Conditional content projection:
 
@@ -161,4 +161,4 @@ onResize(event) {
 }
 ```
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

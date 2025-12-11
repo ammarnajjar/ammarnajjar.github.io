@@ -29,3 +29,26 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
+
+/* Styled small Go-to-top link used in blog posts */
+.go-to-top {
+  display: inline-block;
+  font-size: 0.9rem;
+  color: var(--ifm-color-primary);
+  background: rgba(0, 0, 0, 0.03);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  transition: background-color 120ms ease, transform 120ms ease;
+}
+.go-to-top:hover {
+  background: rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+.go-to-top--right {
+  float: right;
+  margin-left: 0.5rem;
+}
+

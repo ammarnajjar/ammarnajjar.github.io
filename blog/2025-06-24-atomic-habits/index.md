@@ -129,4 +129,4 @@ I really liked this book, read it multiple times.
 - I would recommend it to everyone 👍
 
 
-[Go to Top](#)
+<a href="#" class="go-to-top">Go to Top</a>

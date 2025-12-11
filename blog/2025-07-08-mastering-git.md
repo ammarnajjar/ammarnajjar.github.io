@@ -101,6 +101,8 @@ You will see a "Good signature from..." message if the signature is valid and th
         git config --global push.default current
         ```
 
+<a href="#" class="go-to-top">Go to Top</a>
+
 ## 2. Branching and Navigation
 
 Branches are fundamental to Git, allowing parallel development. These commands help you manage and navigate them.
@@ -137,6 +139,8 @@ Branches are fundamental to Git, allowing parallel development. These commands h
         ```bash
         git stash branch new-feature-branch
         ```
+
+<a href="#" class="go-to-top">Go to Top</a>
 
 ## 3. Committing and History Inspection
 
@@ -198,6 +202,8 @@ Understanding your project's history and making changes are core Git operations.
         git log --grep="bugfix"
         ```
 
+<a href="#" class="go-to-top">Go to Top</a>
+
 ## 4. Tagging and Utilities
 
 Tags are used to mark specific points in history, typically for releases.
@@ -213,6 +219,8 @@ Tags are used to mark specific points in history, typically for releases.
         ```bash
         git tag -l | rg -e "2\d.\d.\d$" | sort | tail -n 10
         ```
+
+<a href="#" class="go-to-top">Go to Top</a>
 
 ## 5. Essential Daily Workflow Commands
 
@@ -348,4 +356,6 @@ These commands are the bread and butter of a software developer's interaction wi
 
 ---
 
-These commands represent a powerful subset of Git's capabilities. By understanding their purpose and knowing when to apply them, you can navigate your project's history, manage branches, and collaborate more efficiently. Regular practice with these commands will solidify your Git proficiency and enhance your development workflow.
+        <a href="#" class="go-to-top">Go to Top</a>
+
+        These commands represent a powerful subset of Git's capabilities. By understanding their purpose and knowing when to apply them, you can navigate your project's history, manage branches, and collaborate more efficiently. Regular practice with these commands will solidify your Git proficiency and enhance your development workflow.
