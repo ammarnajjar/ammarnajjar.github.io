@@ -23,7 +23,7 @@ git:
   permalink: /git
   description: Git related posts
 
-Gitlab:
+gitlab:
   label: Gitlab
   permalink: /gitlab
   description: Gitlab related posts
@@ -72,3 +72,18 @@ robotics:
   label: Robotics
   permalink: /robotics
   description: Robotics related posts
+
+portfolio:
+  label: Portfolio
+  permalink: /portfolio
+  description: Portfolio related posts
+
+typescript:
+  label: TypeScript
+  permalink: /typescript
+  description: TypeScript related posts
+
+vite:
+  label: Vite
+  permalink: /vite
+  description: Vite related posts

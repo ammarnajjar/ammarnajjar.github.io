@@ -8,6 +8,8 @@ tags: [fedora]
 
 When I tried to update from the fedora23 to fedora24, I faced the issue that the `home` directoy lost its labeling:
 
+<!-- truncate -->
+
 ```bash
 > ls -lZ /home/
 drwxr-x---. 83 username username system_u:object_r:unlabeled_t:s0   4096 Jun 22 14:55 username
