@@ -111,7 +111,7 @@ const config: Config = {
               label: "Youtube",
               href: "https://www.youtube.com/@chesswithammar84",
               imageSrc: "/img/icon-youtube.svg",
-              alt: "Follow me on Twitter",
+              alt: "Follow me on Youtube",
             },
             {
               label: "LinkedIn",
@@ -123,13 +123,13 @@ const config: Config = {
               label: "Xing",
               href: "https://www.xing.com/profile/Ammar_Najjar",
               imageSrc: "/img/icon-xing.svg",
-              alt: "Connect on LinkedIn",
+              alt: "Connect on Xing",
             },
             {
               label: "Facebook",
               href: "https://www.facebook.com/najjarammar",
               imageSrc: "/img/icon-facebook.svg",
-              alt: "Follow us on Twitter",
+              alt: "Follow us on facebook",
             },
             {
               label: "X",
