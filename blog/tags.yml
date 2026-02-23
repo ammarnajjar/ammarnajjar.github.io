@@ -87,3 +87,18 @@ vite:
   label: Vite
   permalink: /vite
   description: Vite related posts
+
+tools:
+  label: Tools
+  permalink: /tools
+  description: Development tools and utilities
+
+homebrew:
+  label: Homebrew
+  permalink: /homebrew
+  description: Homebrew package manager related posts
+
+macos:
+  label: macOS
+  permalink: /macos
+  description: macOS related posts
