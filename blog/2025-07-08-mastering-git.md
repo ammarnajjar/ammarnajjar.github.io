@@ -8,7 +8,7 @@ tags: [git]
 
 Git is an indispensable tool for version control, enabling developers to track changes, collaborate effectively, and manage project history. While its capabilities are vast, a solid understanding of key commands can significantly streamline your workflow. This article delves into a selection of practical Git commands, explaining what they do, how to use them, and when they are most effective.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## 1. Configuration Commands
 

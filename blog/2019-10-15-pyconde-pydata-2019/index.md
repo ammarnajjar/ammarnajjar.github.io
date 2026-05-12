@@ -16,7 +16,7 @@ I have just came back from [PyConDe & PyData-2019](https://de.pycon.org/), and I
 - Third Day
 - Sprint Days
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Arriving:
 

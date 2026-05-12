@@ -12,7 +12,7 @@ tags: [python, book-review]
 - ISBN (electronic): 978-1-4842-3727-4
 - URL: [https://link.springer.com/book/10.1007%2F978-1-4842-3727-4](https://link.springer.com/book/10.1007%2F978-1-4842-3727-4)
 
-<!-- truncate -->
+{/* truncate */}
 
 ### Summery:
 

@@ -10,7 +10,7 @@ tags: [python, book-review]
 - ISBN: 978-1-138-58389-4 (Paperback)
 - ISBN: 978-1-138-58390-0 (Hardback)
 
-<!-- truncate -->
+{/* truncate */}
 
 ### Summery:
 

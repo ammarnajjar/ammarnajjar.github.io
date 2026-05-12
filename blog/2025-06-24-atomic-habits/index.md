@@ -8,7 +8,7 @@ tags: [productivity, book-review]
 
 In his book "Atomic Habits", James Clear outlines the principles of habit formation and behavior change. The author shares his personal journey of recovery from a severe injury, which led him to understand that significant progress stems from a series of small, consistent actions, rather than singular transformative events. Clear introduces the "Four Laws of Behavior Change": making habits obvious, attractive, easy, and satisfying. He emphasizes the importance of systems over goals, highlighting how environmental design, social influence, and the immediate gratification of rewards play crucial roles in establishing and maintaining habits, ultimately arguing that true identity change is the North Star of habit transformation.
 
-<!-- truncate -->
+{/* truncate */}
 
 ### Summery:
 

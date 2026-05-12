@@ -8,7 +8,7 @@ tags: [portfolio, react, typescript, vite]
 
 This post explains the design and implementation of a small browser-first [portfolio tracker](https://ammarnajjar.github.io/portfolio) I built. It focuses on requirements, the challenges I ran into, and how the final solution addresses them, including code snippets that illustrate the state handling, caching, and chart interaction.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Goals and requirements
 

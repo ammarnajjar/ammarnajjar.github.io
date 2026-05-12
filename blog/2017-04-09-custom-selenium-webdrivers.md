@@ -13,7 +13,7 @@ How to create custom selenium webdriver classes dynamically with a parametrized 
 ### The motivation:
 Working on website functional testing using selenium webdriver, generates the urge to run tests using different versions of the most commonly used browsers these days, in parallel on the same machine.
 
-<!-- truncate -->
+{/* truncate */}
 
 Tests can use [parametrized](https://pypi.python.org/pypi/parameterized/0.6.1) where the parameter can be the driver class itself, and here comes the need to generate drivers classes dynamically and pass them as parameters to the tests.
 

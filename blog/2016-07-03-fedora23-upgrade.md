@@ -8,7 +8,7 @@ tags: [fedora]
 
 When I tried to update from the fedora23 to fedora24, I faced the issue that the `home` directoy lost its labeling:
 
-<!-- truncate -->
+{/* truncate */}
 
 ```bash
 > ls -lZ /home/

@@ -8,7 +8,7 @@ tags: [productivity, tools, homebrew, macos]
 
 As a software engineer, our toolset shapes how we work and what we can accomplish. Over time, I've curated a collection of essential tools that boost my productivity and make development more enjoyable. Here's a breakdown of my Homebrew setup, featuring the tools I use daily.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Tools at a Glance
 

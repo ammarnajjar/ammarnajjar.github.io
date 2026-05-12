@@ -8,7 +8,7 @@ tags: [neovim , vim]
 
 In this post I'm going to take you in an adventure in my previously `vimrc` and currently [init.vim](https://github.com/ammarnajjar/dotfiles/blob/master/init.vim) which I collected from using [vim](http://www.vim.org/) then [neovim](https://neovim.io) along the last few years. I will explain the feature or the function, then include the configurations or code that should be inserted in the `vimrc` (`init.vim`) file to activate that feature.
 
-<!-- truncate -->
+{/* truncate */}
 
 This might not always be up to date, for I keep changing these configurations when I feel like it.
 

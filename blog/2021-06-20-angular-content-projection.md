@@ -10,7 +10,7 @@ Content projection is a feature in angular that supports inserting a component i
 
 This post explains the different types of content projection, where to use each of them, with an example project. All the code can be found on github.(LINK)
 
-<!-- truncate -->
+{/* truncate */}
 
 Types of Content projection:
 

@@ -10,7 +10,7 @@ import Gist from 'react-gist';
 
 RxJS ([on Github](https://github.com/ReactiveX/rxjs)) is a reactive programming library for Javascript, and in this series, I would like to expose my way of learning it with you.
 
-<!-- truncate -->
+{/* truncate */}
 
 From [Wikipedia](https://en.wikipedia.org/wiki/Reactive_programming):
 

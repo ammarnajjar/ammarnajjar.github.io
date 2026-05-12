@@ -9,7 +9,7 @@ import Gist from 'react-gist';
 
 When I tried out Reactjs [tutorial](https://reactjs.org/tutorial/tutorial.html) few months ago, I noticed that in the official [starter code](https://codepen.io/gaearon/pen/oWWQNa?editors=0010), they repeated same `div` elements in the `render()` method, just in case of change in the source, I will list it here:
 
-<!-- truncate -->
+{/* truncate */}
 
 <Gist id="a607a290ddf165d8ab49bac2a902caec" file="original.jsx" />
 

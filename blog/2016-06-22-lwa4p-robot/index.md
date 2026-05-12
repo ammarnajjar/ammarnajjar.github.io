@@ -10,7 +10,7 @@ During my experiments with the powerball lightweight [lwa4p robot arm](http://mo
 
 I collected all the steps needed in one [bash script](https://github.com/ammarnajjar/lwa4p_robot_arm/blob/master/install.sh), and here I am going to go into the details of the process that I followed.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Choosing CAN Card/Driver
 As lwa4p robot arm uses CAN-bus communication protocol, a CAN card is needed to connect to the arm.
@@ -218,4 +218,4 @@ import lwa4pRandomValid from './lwa4p-random-valid.jpg';
 
 <a href="#" class="go-to-top">Go to Top</a>
 
-<!--  vim: set ft=markdown ts=4 sw=4 et noai : -->
+

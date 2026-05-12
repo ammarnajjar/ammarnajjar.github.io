@@ -11,7 +11,7 @@ tags: [book-review]
 - ISBN: 978-0-1359-5705-9
 - Official website: [https://pragprog.com/book/tpp20/the-pragmatic-programmer-20th-anniversary-edition](https://pragprog.com/book/tpp20/the-pragmatic-programmer-20th-anniversary-edition)
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Summery:
 

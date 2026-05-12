@@ -13,7 +13,7 @@ import Gist from 'react-gist';
 
 I use [gitlab](https://about.gitlab.com/), and I have many repos that I need to track on daily basis, or even more than once per day. I found it so tyring first of all to clone all those repos when I change my working machine, and then to keep all these repos up to date. For that reason I began to write an automation script to do the boring tasks of my shoulders.
 
-<!-- truncate -->
+{/* truncate */}
 
 ## Process
 
