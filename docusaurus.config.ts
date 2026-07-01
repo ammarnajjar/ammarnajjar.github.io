@@ -75,92 +75,12 @@ const config: Config = {
   themeConfig: {
     image: "https://github.com/ammarnajjar.png",
     navbar: {
-      title: "Ammar Najjar",
-      logo: {
-        alt: "Logo",
-        src: "https://github.com/ammarnajjar.png",
-      },
-      items: [
-        { to: "/blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/ammarnajjar/ammarnajjar.github.io",
-          label: "GitHub",
-          position: "right",
-        },
-      ],
+      hideOnScroll: false,
+      items: [],
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Community",
-          items: [
-            {
-              label: "GitHub",
-              href: "https://github.com/ammarnajjar",
-              imageSrc: "/img/icon-github.svg",
-              alt: "GitHub Account",
-            },
-            {
-              label: "StackOverflow",
-              href: "https://stackoverflow.com/users/3297680/ammar",
-              imageSrc: "/img/icon-stackoverflow.png",
-              alt: "Stack Overflow Account",
-            },
-            {
-              label: "Youtube",
-              href: "https://www.youtube.com/@chesswithammar84",
-              imageSrc: "/img/icon-youtube.svg",
-              alt: "Follow me on Youtube",
-            },
-            {
-              label: "LinkedIn",
-              href: "https://de.linkedin.com/in/najjarammar",
-              imageSrc: "/img/icon-linkedin.svg",
-              alt: "Connect on LinkedIn",
-            },
-            {
-              label: "Xing",
-              href: "https://www.xing.com/profile/Ammar_Najjar",
-              imageSrc: "/img/icon-xing.svg",
-              alt: "Connect on Xing",
-            },
-            {
-              label: "Facebook",
-              href: "https://www.facebook.com/najjarammar",
-              imageSrc: "/img/icon-facebook.svg",
-              alt: "Follow us on facebook",
-            },
-            {
-              label: "X",
-              href: "https://x.com/ammarnajjar",
-              imageSrc: "/img/icon-x.png",
-              alt: "Follow me on X",
-            },
-            {
-              label: "Reddit",
-              href: "https://www.reddit.com/user/najjarammar",
-              imageSrc: "/img/icon-reddit.svg",
-              alt: "Connect on LinkedIn",
-            },
-            {
-              label: "RSS",
-              href: "https://ammarnajjar.github.io/blog/rss.xml",
-              imageSrc: "/img/icon-rss.svg",
-              alt: "My RSS Feed",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-          ],
-        },
-      ],
+      links: [],
       copyright: `Copyright © ${new Date().getFullYear()} Ammar Najjar`,
     },
     prism: {
